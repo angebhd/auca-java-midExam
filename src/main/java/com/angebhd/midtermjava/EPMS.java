@@ -403,7 +403,8 @@ public class EPMS extends javax.swing.JFrame {
         float ee_contr = Float.parseFloat(ee_contribution.getText());
         int period = Integer.parseInt(e_period.getText());
         
-        double ee_total_contr = (basic*ee_contr*period) / 100;
+        double ee_total_contr = (basic*ee_contr*period*12) / 100;
+        
         total_ee_contribution.setText(String.valueOf(ee_total_contr));
     }//GEN-LAST:event_total_ee_contrButtonActionPerformed
 
@@ -413,7 +414,7 @@ public class EPMS extends javax.swing.JFrame {
         float er_contr = Float.parseFloat(er_contribution.getText());
         int period = Integer.parseInt(e_period.getText());
         
-        double er_total_contr = (basic*er_contr*period) / 100;
+        double er_total_contr = (basic*er_contr*period*12) / 100;
         total_er_contribution.setText(String.valueOf(er_total_contr));
     }//GEN-LAST:event_total_er_contrButtonActionPerformed
 
@@ -439,12 +440,12 @@ public class EPMS extends javax.swing.JFrame {
         float ee_contr = Float.parseFloat(ee_contribution.getText());
         int period = Integer.parseInt(e_period.getText());
         
-        double ee_total_contr = (basic*ee_contr*period) / 100;
+        double ee_total_contr = (basic*ee_contr*period*12) / 100;
 //        total_ee_contribution.setText(String.valueOf(ee_total_contr));
         
         float er_contr = Float.parseFloat(er_contribution.getText());
         
-        double er_total_contr = (basic*er_contr*period) / 100;
+        double er_total_contr = (basic*er_contr*period*12) / 100;
 //        total_er_contribution.setText(String.valueOf(er_total_contr));        
         int benefitVal;
         if(period < 5){
@@ -470,12 +471,12 @@ public class EPMS extends javax.swing.JFrame {
         float ee_contr = Float.parseFloat(ee_contribution.getText());
         int period = Integer.parseInt(e_period.getText());
         
-        double ee_total_contr = (basic*ee_contr*period) / 100;
+        double ee_total_contr = (basic*ee_contr*period*12) / 100;
 //        total_ee_contribution.setText(String.valueOf(ee_total_contr));
         
         float er_contr = Float.parseFloat(er_contribution.getText());
         
-        double er_total_contr = (basic*er_contr*period) / 100;
+        double er_total_contr = (basic*er_contr*period*12) / 100;
 //        total_er_contribution.setText(String.valueOf(er_total_contr));        
         int benefitVal;
         if(period < 5){
